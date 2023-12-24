@@ -1,0 +1,7 @@
+# Dockerfile.server
+FROM alpine:latest
+RUN apk --no-cache add ca-certificates
+WORKDIR /root/
+COPY bin/manic-server .
+EXPOSE 8080
+CMD ["./manic-server"]

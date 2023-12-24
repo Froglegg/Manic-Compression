@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  manic-client:
+    image: manic-client:latest
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.manic-client
+    container_name: manic-client
+    ports:
+      - "80:80"
+    depends_on:
+      - manic-server
+
+  manic-server:
+    image: manic-server:latest
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.manic-server
+    container_name: manic-server
+    ports:
+      - "8080:8080"

@@ -1,0 +1,18 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "name": "msg",
+      "queueName": "audiotasks",
+      "connection": "AZURE_SERVICEBUS_CONNECTION_STRING"
+    },
+    {
+      "type": "orchestrationClient",
+      "direction": "in",
+      "name": "starter",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+FROM nginx:stable-alpine
+WORKDIR /usr/share/nginx/html
+# copy the build file into the nginx html directory
+COPY web/manic-client/build .
+# copy the nginx configuration file
+COPY web/nginx.conf /etc/nginx/nginx.conf
+# expose port 80
+EXPOSE 80
+# run nginx in foreground
+CMD ["nginx", "-g", "daemon off;"]

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  manic-client:
+    image: sdcc2023team8registry.azurecr.io/manic-client:latest
+    container_name: manic-client
+    ports:
+      - "80:80"
+    depends_on:
+      - manic-server
+
+  manic-server:
+    image: sdcc2023team8registry.azurecr.io/manic-server:latest
+    container_name: manic-server
+    ports:
+      - "8080:8080"
