@@ -1,6 +1,10 @@
 # Manic Compression
 Manic Compression uses an event driven web framework for applying audio effects in a chain using Azure durable functions, service bus, and app service in a multiple container deployment.
 
+![quick_sketch](./project_diagram.png)
+
+See [About.pdf](./about.pdf) for more information about project structure, architecture, etc.
+
 ## Local Development
 ### Setup
 1. Ensure that your AZURE_STORAGE_CONNECTION_STRING is set in your local env
