@@ -20,5 +20,5 @@ All local requests in the React (npm run start) development environment should p
 
 ## Deployment
 You can build and deploy the application by running `./scripts/deploy.sh`
-Navigate to http://manic-compression.azurewebsites.net/ to view the app.
-Navigate to https://manic-compression.scm.azurewebsites.net/ to view the app service logs# manic_compression
+Navigate to http://manic-compression2.azurewebsites.net/ to view the app.
+Navigate to https://manic-compression2.scm.azurewebsites.net/ to view the app service logs# manic_compression
